@@ -1,0 +1,1 @@
+this dir is to save vgg_19.ckpt

@@ -1,0 +1,1 @@
+this dir is to save train-xx.tfrecord and test-xx.tfrecord

@@ -1,0 +1,61 @@
+Finding Labels:
+['Infiltration', 'Effusion', 'No Finding', 'Pneumothorax', 'Atelectasis', 'Consolidation', 'Mass', 'Pleural_Thickening', 'Cardiomegaly', 'Emphysema', 'Nodule', 'Fibrosis', 'Edema', 'Pneumonia', 'Hernia']
+
+images num = 112120                     lambda
+------------------------------------------------
+Infiltration:           19894   9547    0.822565
+Effusion:               13317   3955    0.881225
+No Finding:             60361   60361   0.461639
+Pneumothorax:           5302    2194    0.952711
+Atelectasis:            11559   4215    0.896905
+Consolidation:          4667    1310    0.958375
+Mass:                   5782    2139    0.948430
+Pleural_Thickening:     3385    1126    0.969809
+Cardiomegaly:           2776    1093    0.975241
+Emphysema:              2516    892     0.977560
+Nodule:                 6331    2705    0.943534
+Fibrosis:               1686    727     0.984963
+Edema:                  2303    628     0.979460
+Pneumonia:              1431    322     0.987237
+Hernia:                 227     110     0.997975
+------------------------------------------------
+
+train num = 86524
+------------------------------------------------
+Infiltration:           13782   7327
+Effusion:               8659    2788
+No Finding:             50500   50500
+Pneumothorax:           2637    1241
+Atelectasis:            8280    3414
+Consolidation:          2852    829
+Mass:                   4034    1696
+Pleural_Thickening:     2242    817
+Cardiomegaly:           1707    777
+Emphysema:              1423    587
+Nodule:                 4708    2248
+Fibrosis:               1251    551
+Edema:                  1378    397
+Pneumonia:              876     234
+Hernia:                 141     65
+------------------------------------------------
+
+test num = 25596
+------------------------------------------------
+Infiltration:           6112 2220
+Effusion:               4658 1167
+No Finding:             9861 9861
+Pneumothorax:           2665 953
+Atelectasis:            3279 801
+Consolidation:          1815 481
+Mass:                   1748 443
+Pleural_Thickening:     1143 309
+Cardiomegaly:           1069 316
+Emphysema:              1093 305
+Nodule:                 1623 457
+Fibrosis:               435 176
+Edema:                  925 231
+Pneumonia:              555 88
+Hernia:                 86 45
+------------------------------------------------
+
+[u'Effusion', u'Pneumothorax', u'Edema', u'Cardiomegaly', u'Pleural_Thickening', u'Atelectasis', u'Consolidation', u'Emphysema', u'Pneumonia', u'Nodule', u'Mass', u'Infiltration', u'Hernia', u'No Finding', u'Fibrosis']
