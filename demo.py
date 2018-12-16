@@ -8,7 +8,7 @@ from utils import image_utils
 image_path = 'data/CXR3_IM-1384-1001.png'
 
 FLAGS = tf.app.flags.FLAGS
-tf.flags.DEFINE_string('img', 'data/CXR3_IM-1384-1001.png', 'The test image path')
+tf.flags.DEFINE_string('img', 'data/examples/CXR3_IM-1384-1001.png', 'The test image path')
 
 model_path = 'data/model/my-test-68000'
 data_label_path = 'data/data_label.json'
