@@ -45,7 +45,9 @@ I will release a demo.py, you can use it to test.
     $ python demo.py --img='data/CXR3_IM-1384-1001.png'   
     ``` 
 - test demo example
-    ![example](data/examples/CXR3_IM-1384-1001.png)
+
+    ![example](data/examples/example1.png)
+    
     ![result](data/examples/demo_result.png)
 
 ### Experiments
