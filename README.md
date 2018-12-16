@@ -42,7 +42,7 @@ It is all of common tookits, so I don't give their links.
 I will release a demo.py, you can use it to test.
 - you could provide Chest CT image to test
     ```shell
-    $ python demo.py --img='data/CXR3_IM-1384-1001.png'   
+    $ python demo.py --img='data/examples/CXR3_IM-1384-1001.png'   
     ``` 
 - test demo example
 
