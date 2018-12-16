@@ -42,35 +42,38 @@ It is all of common tookits, so I don't give their links.
 I will release a demo.py, you can use it to test.
 - you could provide Chest CT image to test
     ```shell
-    $ python demo.py 'xxx.png'   
+    $ python demo.py --img='data/CXR3_IM-1384-1001.png'   
     ``` 
-- test demo example 
+- test demo example
+    ![example](data/examples/CXR3_IM-1384-1001.png)
+    ![result](data/examples/demo_result.png)
 
 ### Experiments
 #### Loss
 At last, I trained 100 epoch and the train mlc_loss_weighted reduce to 0.0455, it wasted 36 hours. You can see detials in 'data/log.txt'.
+![example](data/examples/mlc_loss_weighted64.png)
 
 #### AUC
-When epoch = 100, iter = 136000, I eval the auc.
+When epoch = 20, iter = 28000, I eval the auc. Actually, when epoch > 15, the model is overfitting, so you don't need trian too many epoch.
 
 |  | Ours | Paper | test num |
 | :--- | :---: | :---: | :---: |
-| Effusion |  | 0.700 | 4658 |
-| Pneumothorax |  | 0.799 | 2665 |
-| Edema |  | 0.805 | 925 |
-| Cardiomegaly |  | 0.810 | 1069 |
-| Pleural_Thickening |  | 0.684 | 1143 |
-| Atelectasis |  | 0.700 | 3279 |
-| Consolidation |  | 0.703 | 1815 |
-| Emphysema | | 0.833 | 1093 |
-| Pneumonia |  | 0.658 | 555 |
-| Nodule |  | 0.668 | 1623 |
-| Mass |  | 0.693 | 1748 |
-| Infiltration |  | 0.661 | 6112 |
-| Hernia |  | 0.871 | 86 |
-| No Finding |  | - | 9861 |
-| Fibrosis |  | 0.786 | 435 |
-| Mean |  | 0.745 | - |
+| Effusion | 0.7584 | 0.700 | 4658 |
+| Pneumothorax | 0.7498 | 0.799 | 2665 |
+| Edema | 0.7635 | 0.805 | 925 |
+| Cardiomegaly | 0.7735 | 0.810 | 1069 |
+| Pleural_Thickening | 0.7602 | 0.684 | 1143 |
+| Atelectasis | 0.7532 | 0.700 | 3279 |
+| Consolidation | 0.7399 | 0.703 | 1815 |
+| Emphysema | 0.7385 | 0.833 | 1093 |
+| Pneumonia | 0.7367 | 0.658 | 555 |
+| Nodule | 0.7272 | 0.668 | 1623 |
+| Mass | 0.7217 | 0.693 | 1748 |
+| Infiltration | 0.7399 | 0.661 | 6112 |
+| Hernia | 0.7520 | 0.871 | 86 |
+| No Finding | 0.7782 | - | 9861 |
+| Fibrosis | 0.7813 | 0.786 | 435 |
+| Mean | 0.7516 | 0.745 | - |
 
 
 ### References

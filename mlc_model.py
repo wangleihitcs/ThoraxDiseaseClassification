@@ -2,8 +2,8 @@ import tensorflow as tf
 from nets import vgg
 
 class Model(object):
-    def __init__(self, is_training=True):
-        self.batch_size = 64
+    def __init__(self, is_training=True, batch_size=32):
+        self.batch_size = batch_size
         self.image_size = 224
         self.label_num = 15
         self.initial_learning_rate = 1e-4
