@@ -13,7 +13,7 @@ A multi-label-classification model for chest diseases.
 It is all of common tookits, so I don't give their links.
 
 ### DataDownload and Prepare
-- NIH Chest X-ray14 Dataset[(kaggle's download link)](https://www.kaggle.com/nih-chest-xrays/data)
+- NIH Chest X-ray Dataset[(kaggle's download link)](https://www.kaggle.com/nih-chest-xrays/data)
     * you need copy 'Data_Entry_2017.csv' to dir 'data/'
     * you need unzip 'images_001.zip' - 'images_012.zip' to 'data/images'
     * you need copy 'train_val_list.txt' and 'test_list.txt' to 'data/'
@@ -48,51 +48,30 @@ I will release a demo.py, you can use it to test.
 
 ### Experiments
 #### Loss
-At last, the mlc_loss_weighted reduce to 0.0585
+At last, I trained 100 epoch and the train mlc_loss_weighted reduce to 0.0455, it wasted 36 hours. You can see detials in 'data/log.txt'.
 
 #### AUC
-In paper, it is not release Recall, it only release AUC.
+When epoch = 100, iter = 136000, I eval the auc.
 
-|  | Ours | Papers | test num |
+|  | Ours | Paper | test num |
 | :--- | :---: | :---: | :---: |
-| Effusion | 0 | 0.700 | 4658 |
-| Pneumothorax | 0 | 0.799 | 2665 |
-| Edema | 0 | 0.805 | 925 |
-| Cardiomegaly | 0 | 0.810 | 1069 |
-| Pleural_Thickening | 0 | 0.684 | 1143 |
-| Atelectasis | 0 | 0.700 | 3279 |
-| Consolidation | 0 | 0.703 | 1815 |
-| Emphysema | 0 | 0.833 | 1093 |
-| Pneumonia | 0 | 0.658 | 555 |
-| Nodule | 0 | 0.668 | 1623 |
-| Mass | 0 | 0.693 | 1748 |
-| Infiltration | 0 | 0.661 | 6112 |
-| Hernia | 0 | 0.871 | 86 |
-| No Finding | 0 | - | 9861 |
-| Fibrosis | 0 | 0.786 | 435 |
-| Mean | - | 0.745 | - |
+| Effusion |  | 0.700 | 4658 |
+| Pneumothorax |  | 0.799 | 2665 |
+| Edema |  | 0.805 | 925 |
+| Cardiomegaly |  | 0.810 | 1069 |
+| Pleural_Thickening |  | 0.684 | 1143 |
+| Atelectasis |  | 0.700 | 3279 |
+| Consolidation |  | 0.703 | 1815 |
+| Emphysema | | 0.833 | 1093 |
+| Pneumonia |  | 0.658 | 555 |
+| Nodule |  | 0.668 | 1623 |
+| Mass |  | 0.693 | 1748 |
+| Infiltration |  | 0.661 | 6112 |
+| Hernia |  | 0.871 | 86 |
+| No Finding |  | - | 9861 |
+| Fibrosis |  | 0.786 | 435 |
+| Mean |  | 0.745 | - |
 
-#### Recall
-When use threshold = 0.5, recall mean = 0.1876, it is very low. You can reduce threshold to improve acc.
-
-|  | recall | correct num | test num |
-| :--- | :---: | :---: | :---: |
-| Effusion | 0.4526 | 2068 | 4658 |
-| Pneumothorax | 0.1529 | 406 | 2665 |
-| Edema | 0.1606 | 150 | 925 |
-| Cardiomegaly | 0.2204 | 244 | 1069 |
-| Pleural_Thickening | 0.1244 | 144 | 1143 |
-| Atelectasis | 0.2357 | 772 | 3279 |
-| Consolidation | 0.0961 | 173 | 1815 |
-| Emphysema | 0.0648 | 70 | 1093 |
-| Pneumonia | 0.0092 | 5 | 555 |
-| Nodule | 0.1162 | 193 | 1623 |
-| Mass | 0.1674 | 290 | 1748 |
-| Infiltration | 0.3593 | 2182 | 6112 |
-| Hernia | 0.0575 | 5 | 86 |
-| No Finding | 0.5659 | 5537 | 9861 |
-| Fibrosis | 0.0324 | 15 | 435 |
-| Mean | 0.1876 | - | - |
 
 ### References
 - Wang, Xiaosong, et al. **"Chestx-ray8: Hospital-scale chest x-ray database and benchmarks on weakly-supervised classification and localization of common thorax diseases."** Computer Vision and Pattern Recognition (CVPR), 2017 IEEE Conference on. IEEE, 2017.
