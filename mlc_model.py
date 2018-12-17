@@ -2,7 +2,7 @@ import tensorflow as tf
 from nets import vgg
 
 class Model(object):
-    def __init__(self, is_training=True, batch_size=32):
+    def __init__(self, is_training=True, batch_size=64):
         self.batch_size = batch_size
         self.image_size = 224
         self.label_num = 15

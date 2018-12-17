@@ -17,12 +17,10 @@ md = Model(is_training=False, batch_size=1)
 
 with open(data_label_path, 'r') as file:
     labels = json.load(file).keys()
-id2label = {}
-for j in range(md.label_num):
-    id2label[j] = labels[j]
 
 saver = tf.train.Saver()
 with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
     saver.restore(sess, model_path)
 
     images = np.zeros([md.batch_size, md.image_size, md.image_size, 3])
